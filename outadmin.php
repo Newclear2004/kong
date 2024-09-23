@@ -1,0 +1,10 @@
+<?php
+    session_start();
+    require('conn.php');
+    if(isset($_GET['out'])){
+        $_SESSION['id']="";
+        $_SESSION['status']="";
+        $_SESSION['idr']="";
+        header('location:admin.php');
+    }
+?>
